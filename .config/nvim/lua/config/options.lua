@@ -28,3 +28,4 @@ opt.listchars = {
   trail = "·",
   nbsp = "+",
 }
+opt.cursorline = false -- Enable highlighting of the current line
