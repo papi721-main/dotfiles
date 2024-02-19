@@ -102,6 +102,9 @@ class MyPrompt(Prompts):
     def in_prompt_tokens(self):
         return [(Token.Prompt, ">>> ")]
 
+    def out_prompt_tokens(self):
+        return [(Token.Prompt, "")]
+
 
 # c.TerminalInteractiveShell.prompts_class = 'IPython.terminal.prompts.Prompts'
 c.TerminalInteractiveShell.prompts_class = MyPrompt
@@ -115,7 +118,7 @@ c.TerminalInteractiveShell.highlight_matching_brackets = True
 #  Default: traitlets.Undefined
 c.TerminalInteractiveShell.highlighting_style = "one-dark"
 
-RED = "#C70039"
+RED = "#AB4C6B"
 WHITE = "#FFFFFF"
 YELLOW = "#FFFF5C"
 VIOLET = "#BD93F9"
