@@ -20,3 +20,6 @@ map("n", "<leader>uI", toggle.invisible_chars, { desc = "Toggle invisible charac
 -- Toggle Indent-blankline
 del("n", "<leader>ui")
 map("n", "<leader>ui", ":IBLToggle<CR>", { desc = "Toggle Indent-Blankline" })
+
+-- Toggle mini-indentscope
+map("n", "<leader>um", toggle.mini_indent_scope, { desc = "Toggle Mini Indent-scope" })
