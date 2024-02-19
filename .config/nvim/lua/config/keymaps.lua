@@ -16,3 +16,7 @@ map("n", "<leader>uC", ":ColorizerToggle<CR>", { desc = "Toggle Colorizer" })
 
 -- Toggle invisible characters
 map("n", "<leader>uI", toggle.invisible_chars, { desc = "Toggle invisible characters" })
+
+-- Toggle Indent-blankline
+del("n", "<leader>ui")
+map("n", "<leader>ui", ":IBLToggle<CR>", { desc = "Toggle Indent-Blankline" })
