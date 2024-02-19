@@ -22,4 +22,13 @@ function M.invisible_chars()
   end
 end
 
+function M.mini_indent_scope()
+  vim.g.miniindentscope_disable = not vim.g.miniindentscope_disable
+
+  if vim.g.miniindentscope_disable then
+    lazy_util.warn("Disabled mini indentscope", { title = "Option" })
+  else
+    lazy_util.info("Enabled mini indentscope", { title = "Option" })
+  end
+end
 return M
