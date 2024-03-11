@@ -78,7 +78,7 @@ alias pacman='pacman --color auto'
 alias alx_work='cd ~/Files/Alx/Workspace'
 alias alx_projects='cd ~/Files/Alx/Workspace/projects'
 alias alx_practice='cd ~/Files/Alx/Workspace/practice'
-alias alx_sandbox='ssh alxsandbox@192.168.122.149'
+alias alx_sandbox='ssh eyob721@192.168.122.113'
 alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.149'
 alias alx_vm2='ssh alxsandbox@192.168.122.234'
 alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
@@ -159,7 +159,7 @@ export LD_PRELOAD="/home/eyob721/Files/Alx/Workspace/tools/terminal-tools/stderr
 
 # stderred - blacklisted programs
 # this blacklistes all programs starting with `git` or 'test'
-export STDERRED_BLACKLIST="^(git|yay|pacman|test.*)$"
+export STDERRED_BLACKLIST="^(git|yay|pacman|python|python3|test.*)$"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
