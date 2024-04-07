@@ -3,5 +3,6 @@
   "tabWidth": 2,
   "keywordCase": "upper",
   "dataTypeCase": "upper",
-  "linesBetweenQueries": 2
+  "linesBetweenQueries": 2,
+  "indentStyle": "tabularLeft"
 }
