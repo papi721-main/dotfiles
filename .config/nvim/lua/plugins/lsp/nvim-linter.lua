@@ -27,9 +27,7 @@ return {
     ---@type table<string,table>
     linters = {
       markdownlint = {
-        args = {
-          "--disable MD013",
-        },
+        args = { "--config", "~/config/nvim/.markdownlint.jsonc", "--" },
       },
     },
   },
