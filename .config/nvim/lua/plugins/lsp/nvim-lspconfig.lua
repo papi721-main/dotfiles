@@ -17,6 +17,30 @@ return {
       -- HTML
       html = {},
 
+      emmet_ls = {
+        filetypes = {
+          "html",
+          "css",
+          "eruby",
+          "javascript",
+          "javascriptreact",
+          "less",
+          "sass",
+          "scss",
+          "svelte",
+          "pug",
+          "typescriptreact",
+          "vue",
+        },
+        init_options = {
+          html = {
+            options = {
+              -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+              ["bem.enabled"] = true,
+            },
+          },
+        },
+      },
       -- Json
       jsonls = {},
 
@@ -28,6 +52,13 @@ return {
 
       -- Javascript and Typescript
       tsserver = {},
+
+      eslint = {
+        settings = {
+          -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
+          workingDirectories = { mode = "auto" }, -- Default
+        },
+      },
 
       -- Lua
       lua_ls = {
