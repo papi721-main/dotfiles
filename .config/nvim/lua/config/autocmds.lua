@@ -35,9 +35,10 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 --   end,
 -- })
 
+-- 2 tab filetypes
 vim.api.nvim_create_autocmd({ "BufEnter" }, {
   group = augroup("small_indent_files"),
-  pattern = { "*.lua", "*.md", "*.html", "*.css", "*.js", "*.sql" },
+  pattern = { "*.lua", "*.md", "*.html", "*.css", "*.js", "*.sql", "*.json" },
   callback = function()
     vim.opt_local.tabstop = 2
     vim.opt_local.softtabstop = 2
