@@ -9,7 +9,10 @@ return {
 
       python = { "pycodestyle" },
       markdown = { "markdownlint" },
-      javascript = { "eslint" },
+      -- WARN: Don't uncomment this, this is the line that is causing
+      -- "esling: ENONET: no such file or directory" error,
+      -- Use the elsint LSP instead for a linter
+      -- javascript = { "eslint" },
 
       -- NOTE: For eslint, you must generate a .eslintrc.js configuration
       -- file at the root of your project. To do this run the command

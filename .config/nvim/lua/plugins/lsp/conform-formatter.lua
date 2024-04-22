@@ -6,8 +6,8 @@ return {
       ["sh"] = { "shfmt" },
       ["c"] = { "clang_format" },
       ["python"] = { "isort", "black" },
-      ["javascript"] = { "prettier" },
-      ["javascriptreact"] = { "prettier" },
+      ["javascript"] = { "prettier" }, -- The eslint LSP "fixOnSave" is used as a formatter
+      ["javascriptreact"] = { "prettier" }, -- The eslint LSP "fixOnSave" is used as a formatter
       ["typescript"] = { "prettier" },
       ["typescriptreact"] = { "prettier" },
       ["vue"] = { "prettier" },
