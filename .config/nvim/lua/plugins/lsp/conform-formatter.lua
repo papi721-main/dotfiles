@@ -6,10 +6,14 @@ return {
       ["sh"] = { "shfmt" },
       ["c"] = { "clang_format" },
       ["python"] = { "isort", "black" },
-      ["javascript"] = { "prettier" }, -- The eslint LSP "fixOnSave" is used as a formatter
-      ["javascriptreact"] = { "prettier" }, -- The eslint LSP "fixOnSave" is used as a formatter
-      ["typescript"] = { "prettier" },
-      ["typescriptreact"] = { "prettier" },
+      -- NOTE: For JavaScript and TypeScript files the tsserver LSP formatter
+      -- is enabled, in addition with eslint fix command
+      --
+      -- ["javascript"] = { "prettier" },
+      -- ["javascriptreact"] = { "prettier" },
+      -- ["typescript"] = { "prettier" },
+      -- ["typescriptreact"] = { "prettier" },
+      --
       ["vue"] = { "prettier" },
       ["css"] = { "prettier" },
       ["scss"] = { "prettier" },

@@ -22,14 +22,14 @@ return {
           "html",
           "css",
           "eruby",
-          "javascript",
-          "javascriptreact",
+          -- "javascript",
+          -- "javascriptreact",
+          -- "typescriptreact",
           "less",
           "sass",
           "scss",
           "svelte",
           "pug",
-          "typescriptreact",
           "vue",
         },
         init_options = {
@@ -45,13 +45,37 @@ return {
       jsonls = {},
 
       -- Markdown
-      marksman = {},
+      marksman = {
+        filetypes = { "md" },
+      },
 
       -- SQL
       sqlls = {},
 
       -- Javascript and Typescript
-      tsserver = {},
+      -- config options: https://github.com/typescript-language-server/typescript-language-server/blob/master/docs/configuration.md
+      tsserver = {
+        completions = {
+          completeFunctionCalls = true,
+        },
+        settings = {
+          javascript = {
+            format = {
+              enable = true,
+              baseIndentSize = 0,
+              indentSize = 2,
+              tabsize = 2,
+              convertTabsToSpaces = true,
+              semicolons = "insert",
+              insertSpaceBeforeFunctionParenthesis = true,
+            },
+            -- inlayHints = {
+            --   includefunctionLikeReturnTypes = true,
+            --   includeInlayFunctionParameterTypeHints = true,
+            -- },
+          },
+        },
+      },
 
       eslint = {
         settings = {
