@@ -82,6 +82,7 @@ alias alx_sandbox='ssh eyob721@192.168.122.121'
 alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
 alias alx_vm2='ssh alxsandbox@192.168.122.234'
 alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
+alias alx_python_env_activate='source ~/Files/Alx/Workspace/alx_python_env/bin/activate'
 
 alias my_dev_work='cd ~/Files/Developer/Workspace/'
 alias val_full='valgrind --show-leak-kinds=all --track-origins=yes -s'
