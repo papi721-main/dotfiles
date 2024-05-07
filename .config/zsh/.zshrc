@@ -151,6 +151,11 @@ fi
 # pip3 requires $HOME/.local/bin to be in PATH
 export PATH="$PATH:$HOME/.local/bin"
 
+# Add ruby to PATH for gem executables
+if [[ -e $(which ruby) ]]; then
+    export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
+fi
+
 # Homebrew
 if [[ -e $(which brew) ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
