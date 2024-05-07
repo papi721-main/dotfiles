@@ -149,7 +149,9 @@ if [[ -e $(which pyenv) ]]; then
 fi
 
 # pip3 requires $HOME/.local/bin to be in PATH
-export PATH="$PATH:$HOME/.local/bin"
+if [[ -e $(which pip3) ]]; then
+    export PATH="$PATH:$HOME/.local/bin"
+fi
 
 # Add ruby to PATH for gem executables
 if [[ -e $(which ruby) ]]; then
