@@ -27,6 +27,7 @@ return {
       ["graphql"] = { "prettier" },
       ["handlebars"] = { "prettier" },
       ["sql"] = { "sql_formatter" },
+      ["puppet"] = { "puppet-lint" },
       ["*"] = { "trim_whitespace", "trim_newlines" },
       ["_"] = { "trim_whitespace", "trim_newlines" },
     },

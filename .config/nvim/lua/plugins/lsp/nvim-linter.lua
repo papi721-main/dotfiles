@@ -7,6 +7,7 @@ return {
       -- shellcheck is not needed here, mason handles it
       -- sh = { "shellcheck" },
 
+      puppet = { "puppet-lint" },
       python = { "pycodestyle" },
       markdown = { "markdownlint" },
       -- WARN: Don't uncomment this, this is the line that is causing
