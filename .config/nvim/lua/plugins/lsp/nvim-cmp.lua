@@ -76,17 +76,28 @@ return {
         { name = "emoji" },
       }),
       -- My formatting
+      -- formatting = {
+      --   fields = { "kind", "abbr", "menu" },
+      --   format = function(entry, item)
+      --     -- Kind icons
+      --     item.kind = string.format("%s", icons[item.kind])
+      --     item.menu = ({
+      --       nvim_lsp = "[LSP]",
+      --       -- luasnip = "[Snippet]",
+      --       buffer = "[Buffer]",
+      --       path = "[Path]",
+      --     })[entry.source.name]
+      --     return item
+      --   end,
+      -- },
+
+      -- LazyVim formatting
       formatting = {
-        fields = { "kind", "abbr", "menu" },
-        format = function(entry, item)
-          -- Kind icons
-          item.kind = string.format("%s", icons[item.kind])
-          item.menu = ({
-            nvim_lsp = "[LSP]",
-            -- luasnip = "[Snippet]",
-            buffer = "[Buffer]",
-            path = "[Path]",
-          })[entry.source.name]
+        format = function(_, item)
+          local icons = require("lazyvim.config").icons.kinds
+          if icons[item.kind] then
+            item.kind = icons[item.kind] .. item.kind
+          end
           return item
         end,
       },
