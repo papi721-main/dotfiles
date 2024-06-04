@@ -68,6 +68,8 @@ return {
               convertTabsToSpaces = true,
               semicolons = "insert",
               insertSpaceBeforeFunctionParenthesis = true,
+              insertSpaceAfterFunctionKeywordForAnonymousFunctions = true,
+              insertSpaceAfterConstructor = true,
             },
             -- inlayHints = {
             --   includefunctionLikeReturnTypes = true,

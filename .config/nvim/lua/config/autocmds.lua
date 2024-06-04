@@ -91,15 +91,15 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
-  group = augroup("nodejs_hashbang"),
-  pattern = { "*.js" },
-  callback = function()
-    local first_line = vim.api.nvim_buf_get_lines(0, 0, 1, true)[1]
-    local python3_hashbang = "#!/usr/bin/node"
-
-    if first_line ~= python3_hashbang then
-      vim.api.nvim_buf_set_lines(0, 0, 0, true, { python3_hashbang })
-    end
-  end,
-})
+-- vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
+--   group = augroup("nodejs_hashbang"),
+--   pattern = { "*.js" },
+--   callback = function()
+--     local first_line = vim.api.nvim_buf_get_lines(0, 0, 1, true)[1]
+--     local python3_hashbang = "#!/usr/bin/node"
+--
+--     if first_line ~= python3_hashbang then
+--       vim.api.nvim_buf_set_lines(0, 0, 0, true, { python3_hashbang })
+--     end
+--   end,
+-- })
