@@ -9,7 +9,7 @@ When adding sources:
   2. then include the source name in the `sources` key
 --]]
 
-local icons = require("utils.cmp_util").kind_icons
+-- local icons = require("utils.cmp_util").kind_icons
 local window_opts = require("utils.cmp_util").window_opts
 
 return {
@@ -76,8 +76,8 @@ return {
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "path" },
-      }, {
         { name = "buffer" },
+      }, {
         { name = "emoji" },
       }),
       -- My formatting
