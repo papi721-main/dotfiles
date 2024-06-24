@@ -86,8 +86,8 @@ alias alxse_practice="cd $ALXSE/practice"
 alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
 alias val_full='valgrind --show-leak-kinds=all --track-origins=yes -s'
 alias betty_ch='betty *.[ch]'
-alias ghidra='/home/eyob721/Files/Alx/Workspace/tools/ghidra/ghidra_10.3.3_PUBLIC/ghidraRun'
-alias w3c="/home/eyob721/Files/Alx/Workspace/tools/others/W3C-Validator/w3c_validator.py"
+alias ghidra="$DEV/tools/ghidra/ghidra_10.3.3_PUBLIC/ghidraRun"
+alias w3c="$DEV/tools/others/W3C-Validator/w3c_validator.py"
 alias semijs="semistandard"
 alias mysql='mariadb'
 # alias live-server="live-server --browser='firefox-developer-edition'"
@@ -97,9 +97,10 @@ alias dev_work="cd $DEV/workspace/"
 alias dev_practice="cd $DEV/workspace/practice/"
 alias dev_projects="cd $DEV/workspace/projects/"
 alias dev_tutorials="cd $DEV/workspace/tutorials/"
+alias run_java="$DEV/tools/terminal/run_java"
 
 # Experimental
-alias git_commit="~/Files/Alx/Workspace/tools/terminal-tools/git_commit.sh"
+alias git_commit="$DEV/tools/terminal/git_commit.sh"
 alias git_dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME "
 
 # Senbet
