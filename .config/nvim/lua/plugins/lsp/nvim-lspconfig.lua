@@ -4,6 +4,10 @@ return {
   opts = {
     ---@type lspconfig.options
     -- Add your LSPs (only) here, add linter and formatters in mason config
+    --
+    -- For possible server configurations, read this first
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+    --
     servers = {
       -- Bash
       bashls = {},
@@ -12,7 +16,23 @@ return {
       clangd = {},
 
       -- CSS
-      cssls = {},
+      cssls = {
+        settings = {
+          css = {
+            validate = true,
+            hover = {
+              documentation = true,
+              references = true,
+            },
+          },
+          less = {
+            validate = true,
+          },
+          scss = {
+            validate = true,
+          },
+        },
+      },
 
       -- HTML
       html = {},

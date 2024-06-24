@@ -103,3 +103,27 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
 --     end
 --   end,
 -- })
+
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
+  group = augroup("css_cmdline_disable"),
+  pattern = { "*.css" },
+  callback = function()
+    require("noice").setup({
+      cmdline = {
+        enabled = false,
+      },
+    })
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufLeave" }, {
+  group = augroup("css_cmdline_enable"),
+  pattern = { "*.css" },
+  callback = function()
+    require("noice").setup({
+      cmdline = {
+        enabled = true,
+      },
+    })
+  end,
+})
