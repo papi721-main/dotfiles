@@ -67,6 +67,8 @@ bindkey '^e' edit-command-line
 # }}}
 
 # == Aliases ==============================================================={{{
+ALXSE="$HOME/Files/Alx/software_engineering"
+DEV="$HOME/Files/Developer"
 
 # System aliases
 alias ls='ls --color=auto -l'
@@ -75,23 +77,26 @@ alias grep='grep --color=auto'
 alias pacman='pacman --color auto'
 
 # Alx aliases
-alias alx_work='cd ~/Files/Alx/Workspace'
-alias alx_projects='cd ~/Files/Alx/Workspace/projects'
-alias alx_practice='cd ~/Files/Alx/Workspace/practice'
-alias alx_sandbox='ssh eyob721@192.168.122.219'
-alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
-alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
-alias alx_server='ssh alx_server'
+alias alxse="cd $ALXSE"
+alias alxse_projects="cd $ALXSE/projects"
+alias alxse_practice="cd $ALXSE/practice"
+# alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
 
-alias my_dev_work='cd ~/Files/Developer/Workspace/'
+# CLI aliases
+alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
 alias val_full='valgrind --show-leak-kinds=all --track-origins=yes -s'
 alias betty_ch='betty *.[ch]'
-alias mv_tests='mv *main.py *main.c tests/'
 alias ghidra='/home/eyob721/Files/Alx/Workspace/tools/ghidra/ghidra_10.3.3_PUBLIC/ghidraRun'
 alias w3c="/home/eyob721/Files/Alx/Workspace/tools/others/W3C-Validator/w3c_validator.py"
-# alias live-server="live-server --browser='firefox-developer-edition'"
 alias semijs="semistandard"
 alias mysql='mariadb'
+# alias live-server="live-server --browser='firefox-developer-edition'"
+
+# Developer aliases
+alias dev_work="cd $DEV/workspace/"
+alias dev_practice="cd $DEV/workspace/practice/"
+alias dev_projects="cd $DEV/workspace/projects/"
+alias dev_tutorials="cd $DEV/workspace/tutorials/"
 
 # Experimental
 alias git_commit="~/Files/Alx/Workspace/tools/terminal-tools/git_commit.sh"
@@ -163,7 +168,7 @@ if [[ -e $(which brew) ]]; then
 fi
 
 # stderr in red: https://github.com/ku1ik/stderred
-export LD_PRELOAD="/home/eyob721/Files/Alx/Workspace/tools/terminal-tools/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+export LD_PRELOAD="$DEV/tools/terminal/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
 
 # stderred - blacklisted programs
 # this blacklistes all programs starting with `git` or 'test'
