@@ -1001,6 +1001,7 @@ _comps=(
 '-parameter-' '_parameter'
 'parec' '_pulseaudio'
 'parecord' '_pulseaudio'
+'pass' '_pass'
 'passwd' '_users'
 'paste' '_paste'
 'pasuspender' '_pulseaudio'
@@ -1776,7 +1777,6 @@ _patcomps=(
 )
 
 _postpatcomps=(
-'*' '_python-argcomplete'
 '_*' '_compadd'
 'c++-*' '_gcc'
 'g++-*' '_gcc'
@@ -1867,10 +1867,10 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _networkQuality _nftables _ninja _node _nvm \
             _oomctl _openssl _openvpn3 _optirun _paccache \
             _pacdiff _paclist _paclog-pkglist _pacman _pacscripts \
-            _pacsearch _pacsort _pactree _pamac _patool \
-            _periscope _pgsql_utils _phing _pip _pixz \
-            _pkcon _play _pm2 _port _protoc \
-            _pulseaudio _pygmentize _python-argcomplete _qmk _qpdf \
+            _pacsearch _pacsort _pactree _pamac _pass \
+            _patool _periscope _pgsql_utils _phing _pip \
+            _pixz _pkcon _play _pm2 _port \
+            _protoc _pulseaudio _pygmentize _qmk _qpdf \
             _rails _ralio _rankmirrors _redis-cli _resolvectl \
             _rfkill _rg _rkt _rmlint _rslsync \
             _rspec _rsvm _rubocop _sbt _scala \

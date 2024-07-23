@@ -67,8 +67,8 @@ bindkey '^e' edit-command-line
 # }}}
 
 # == Aliases ==============================================================={{{
-ALXSE="$HOME/Files/Alx/software_engineering"
-DEV="$HOME/Files/Developer"
+DEV="$HOME/Files/Dev"
+ALXSE="$DEV/Alx/software_engineering"
 
 # System aliases
 alias ls='ls --color=auto -l'
@@ -97,7 +97,7 @@ alias dev_work="cd $DEV/workspace/"
 alias dev_practice="cd $DEV/workspace/practice/"
 alias dev_projects="cd $DEV/workspace/projects/"
 alias dev_tutorials="cd $DEV/workspace/tutorials/"
-alias run_java="$DEV/tools/terminal/run_java"
+alias run_java="$DEV/tools/terminal/run_java.sh"
 
 # Experimental
 alias git_commit="$DEV/tools/terminal/git_commit.sh"
