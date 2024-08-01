@@ -93,10 +93,11 @@ alias mysql='mariadb'
 # alias live-server="live-server --browser='firefox-developer-edition'"
 
 # Developer aliases
-alias dev_work="cd $DEV/workspace/"
-alias dev_practice="cd $DEV/workspace/practice/"
-alias dev_projects="cd $DEV/workspace/projects/"
-alias dev_tutorials="cd $DEV/workspace/tutorials/"
+alias dev_web="cd $DEV/Web-Development"
+alias dev_mobile="cd $DEV/Mobile-Development"
+alias dev_data_analyst="cd $DEV/Data-Analyst"
+
+# Java aliases
 alias run_java="$DEV/tools/terminal/run_java.sh"
 
 # Experimental
