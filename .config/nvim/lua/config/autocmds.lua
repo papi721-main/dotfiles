@@ -70,7 +70,7 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
   pattern = { "*.py" },
   callback = function()
     local first_line = vim.api.nvim_buf_get_lines(0, 0, 1, true)[1]
-    local python3_hashbang = "#!/usr/bin/python3"
+    local python3_hashbang = "#!/usr/bin/env python3"
 
     if first_line ~= python3_hashbang then
       -- Add the hashbang at the first line
