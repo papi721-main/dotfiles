@@ -93,6 +93,7 @@ alias mysql='mariadb'
 # alias live-server="live-server --browser='firefox-developer-edition'"
 
 # Developer aliases
+alias dev="cd $DEV/"
 alias dev_web="cd $DEV/Web-Development"
 alias dev_mobile="cd $DEV/Mobile-Development"
 alias dev_data_analyst="cd $DEV/Data-Analyst"
