@@ -9,7 +9,7 @@ cd ~
 ```
 
 ```sh
-git clone --bare git@github.com:eyob721/papi721_dotfiles.git ~/.dotfiles
+git clone --bare git@github.com:papi72112/dotfiles.git ~/.dotfiles
 ```
 
 2\. Include dotfiles alias in ~/.bashrc or ~/.zshrc
