@@ -23,7 +23,7 @@ source ~/.zshrc
 ```
 
 ```sh
-git_dotfiles config status.showUntrackedFiles no # don't track files noting $HOME work-tree
+git_dotfiles config status.showUntrackedFiles no # don\'t track files noting $HOME work-tree
 ```
 
 ```sh
