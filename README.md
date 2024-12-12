@@ -15,11 +15,11 @@ git clone --bare git@github.com:papi72112/dotfiles.git ~/.dotfiles
 2\. Include dotfiles alias in ~/.bashrc or ~/.zshrc
 
 ```sh
-echo alias git_dotfiles=\'git --git-dir='$HOME'/.dotfiles --work-tree='$HOME'\' >> .bashrc
+echo alias git_dotfiles=\'git --git-dir='$HOME'/.dotfiles --work-tree='$HOME'\' >> .zshrc
 ```
 
 ```sh
-source ~/.bashrc
+source ~/.zshrc
 ```
 
 ```sh
