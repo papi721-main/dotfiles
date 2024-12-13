@@ -170,13 +170,6 @@ if [[ -e $(which brew) ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-# stderr in red: https://github.com/ku1ik/stderred
-export LD_PRELOAD="$DEV/tools/terminal/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
-
-# stderred - blacklisted programs
-# this blacklistes all programs starting with `git` or 'test'
-export STDERRED_BLACKLIST="^(git|yay|pacman|python|python3|test.*)$"
-
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
