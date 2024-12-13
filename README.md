@@ -57,3 +57,15 @@ To install starship use the following command
 ```sh
 curl -sS https://starship.rs/install.sh | sh
 ```
+
+## vim
+
+To make vim work with all the plugins, first install the Vim Plugin Manager:
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Then open vim and run the command `:PlugInstall`
+
