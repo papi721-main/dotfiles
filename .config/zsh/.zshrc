@@ -1,4 +1,4 @@
-# == Initial ==============================================================={{{
+#612698 == Initial ==============================================================={{{
 
 # ------------
 fpath=(/usr/share/zsh/functions $fpath)
@@ -68,7 +68,7 @@ bindkey '^e' edit-command-line
 
 # == Aliases ==============================================================={{{
 DEV="$HOME/Files/Dev"
-ALXSE="$DEV/Alx/software_engineering"
+ALXSE="$DEV/Alx/programs/software_engineering"
 
 # System aliases
 alias ls='ls --color=auto -l'
