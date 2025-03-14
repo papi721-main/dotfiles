@@ -5,7 +5,7 @@ return {
       -- Linters
       -- "eslint-lsp", --TypeScript & JavaScript
       -- "markdownlint", -- Markdown
-      -- "shellcheck", -- Bash
+      "shellcheck", -- Bash
 
       -- Formatters
       "stylua", -- Lua
