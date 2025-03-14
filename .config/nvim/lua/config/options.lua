@@ -29,3 +29,8 @@ opt.listchars = {
   nbsp = "+",
 }
 opt.cursorline = true -- Enable highlighting of the current line
+
+-- [[ Misc ]]
+-- LSP Server to use for Python.
+-- Set to "basedpyright" to use basedpyright instead of pyright.
+vim.g.lazyvim_python_lsp = "pyright"
