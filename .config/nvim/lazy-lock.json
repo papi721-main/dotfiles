@@ -1,5 +1,7 @@
 {
   "LazyVim": { "branch": "main", "commit": "3f034d0a7f58031123300309f2efd3bb0356ee21" },
+  "ale": { "branch": "master", "commit": "1c91102112ac5addbdbf178268c61a2ead64fb2a" },
+  "betty-ale-vim": { "branch": "main", "commit": "a25dd9d3e5ee7edd67457067d08196245eb87f0a" },
   "blink.cmp": { "branch": "main", "commit": "18b352d12b35bca148427b607098df14b75a218f" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "4bb938bbba41d306db18bf0eb0633a5f28fd7ba0" },

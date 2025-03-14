@@ -12,7 +12,7 @@ return {
       "shfmt", -- Bash
       "black", -- Python
       "isort", -- Python (for formatting imports)
-      -- "clang-format", -- C and C++
+      "clang-format", -- C and C++
       -- "prettier", -- HTML, CSS, and JS
       -- "mdformat", -- Markdown
       -- "sql-formatter", -- SQL

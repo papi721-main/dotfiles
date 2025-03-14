@@ -13,6 +13,7 @@ return {
         fish = { "fish_indent" },
         sh = { "shfmt" },
         python = { "isort", "black" },
+        c = { "clang_format" },
       },
       -- The options you set here will be merged with the builtin formatters.
       -- You can also define any custom formatters here.
@@ -32,6 +33,10 @@ return {
         -- },
         black = {
           prepend_args = { "--line-length=79" },
+        },
+        clang_format = {
+          -- Below line is only left here for example
+          -- prepend_args = { "--style=file:" .. vim.fn.expand("$HOME/.config/nvim/.clang-format") },
         },
       },
     }
