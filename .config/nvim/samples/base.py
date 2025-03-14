@@ -4,6 +4,7 @@
 
 class Base:
     """Class definition of the Base.
+
     This class will be the base of all other classes in the project.
 
     Attributes:
@@ -93,16 +94,15 @@ class Base:
     def create(cls, **dictionary):
         """Returns an instance with all attributes already set."""
         if cls.__name__ == "Rectangle":
-            obj = cls(1, 1)
+            obj = cls(1, 1)  # pyright: ignore
         else:
             obj = cls(1)
-        obj.update(**dictionary)
+        obj.update(**dictionary)  # pyright: ignore
         return obj
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Save the JSON string representation of a list of objects to a file.
-           In CSV format.
+        """Save the JSON representation of a list of objects to a CSV file
 
         Args:
             list_objs (list): List of objects that inherit from Base.
