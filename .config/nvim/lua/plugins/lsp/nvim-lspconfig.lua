@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-doc-name
 return {
   "neovim/nvim-lspconfig",
   -- Use function(_, opts) to modify the default options instead of replacing it
@@ -58,7 +59,7 @@ return {
     ---@type lspconfig.options
     opts.servers = {
       -- C and C++
-      clangd = {},
+      -- clangd = {}, -- already installed with LazyExtras lang.clangd
 
       -- Lua
       lua_ls = {
