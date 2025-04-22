@@ -71,8 +71,9 @@ DEV="$HOME/Files/Dev"
 ALXSE="$DEV/Alx/programs/software_engineering"
 
 # System aliases
-alias ls='ls --color=auto -l'
-alias l='ls --color=auto -l'
+# alias ls='ls --color=auto -l'
+# alias l='ls --color=auto -l'
+alias ls='lsd -l'
 alias grep='grep --color=auto'
 alias pacman='pacman --color auto'
 
