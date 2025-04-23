@@ -95,9 +95,9 @@ alias mysql='mariadb'
 
 # Developer aliases
 alias dev="cd $DEV/"
-alias dev_web="cd $DEV/Web-Development"
-alias dev_mobile="cd $DEV/Mobile-Development"
-alias dev_data_analyst="cd $DEV/Data-Analyst"
+alias dev_boots="cd $DEV/Boots"
+alias dev_alx="cd $DEV/Alx"
+alias dev_data="cd $DEV/Data"
 alias dev_sandbox='ssh papi721@192.168.122.161'
 
 # Java aliases
