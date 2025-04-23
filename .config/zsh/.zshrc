@@ -162,6 +162,11 @@ if [[ -e $(which pip3) ]]; then
     export PATH="$PATH:$HOME/.local/bin"
 fi
 
+# Add GO BIN directory to PATH, so that go programs are recognized
+if [[ -e $(which go) ]]; then
+    export PATH="$PATH:$HOME/go/bin/"
+fi
+
 # Add ruby to PATH for gem executables
 if [[ -e $(which ruby) ]]; then
     export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
