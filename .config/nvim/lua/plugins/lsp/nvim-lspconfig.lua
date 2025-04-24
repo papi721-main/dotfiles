@@ -128,10 +128,12 @@ return {
                 enabled = true,
                 convention = "google",
                 addIgnore = {
-                  -- "D100", -- Missing docstring in public module
+                  "D100", -- Missing docstring in public module
                   "D415", -- First line should end with a period, question mark or exclamation point
                   "D403", -- First word of the first line should start with a Capital letter
                   "D202", -- No blank lines allowed after function docstring
+                  "D205", -- 1 blank line required between summary line and description
+                  "D212", -- Multi-line docstring summary should start at the first line
                 },
               },
               pyflakes = { -- linter to detect various errors
