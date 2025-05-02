@@ -1,0 +1,10 @@
+[user]
+	name = papi721-main
+	email = 99392252+papi721-main@users.noreply.github.com
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[init]
+	defaultBranch = main
