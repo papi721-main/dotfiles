@@ -192,4 +192,8 @@ fi
 # ssh-agent service environemnt variable
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+# TODO:
+# Write an if command that checks if id_github is already added and 
+# if not, ssh-add id_github
+
 # }}}
