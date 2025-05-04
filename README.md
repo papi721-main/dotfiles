@@ -1,4 +1,4 @@
-# eyob721 dotfiles
+# papi721 dotfiles
 
 ## Setting up the dotfiles
 
