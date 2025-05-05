@@ -67,8 +67,9 @@ bindkey '^e' edit-command-line
 # }}}
 
 # == Aliases ==============================================================={{{
-DEV="$HOME/Files/Dev"
-ALXSE="$DEV/Alx/programs/software_engineering"
+DEV="$HOME/Files/2_Resources/Dev"
+ALXSE="$HOME/Files/0_Projects/Alx/programs/software_engineering"
+BOOTS="$HOME/Files/0_Projects/Boots"
 
 # System aliases
 # alias ls='ls --color=auto -l'
@@ -78,9 +79,9 @@ alias grep='grep --color=auto'
 alias pacman='pacman --color auto'
 
 # Alx aliases
-alias alxse="cd $ALXSE"
-alias alxse_projects="cd $ALXSE/projects"
-alias alxse_practice="cd $ALXSE/practice"
+alias alxse="cd $ALXSE && pyenv activate alxse 2> /dev/null"
+alias alxse_projects="cd $ALXSE/projects && pyenv activate alxse 2> /dev/null"
+alias alxse_practice="cd $ALXSE/practice && pyenv activate alxse 2> /dev/null"
 # alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
 
 # CLI aliases
@@ -95,10 +96,8 @@ alias mysql='mariadb'
 
 # Developer aliases
 alias dev="cd $DEV/"
-alias dev_boots="cd $DEV/Boots"
-alias dev_alx="cd $DEV/Alx"
-alias dev_data="cd $DEV/Data"
 alias dev_sandbox='ssh papi721@192.168.122.69'
+alias boots="cd $BOOTS && pyenv activate boots 2> /dev/null"
 
 # Java aliases
 alias run_java="$DEV/tools/terminal/run_java.sh"
