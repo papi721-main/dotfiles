@@ -98,7 +98,7 @@ alias dev="cd $DEV/"
 alias dev_boots="cd $DEV/Boots"
 alias dev_alx="cd $DEV/Alx"
 alias dev_data="cd $DEV/Data"
-alias dev_sandbox='ssh papi721@192.168.122.161'
+alias dev_sandbox='ssh papi721@192.168.122.69'
 
 # Java aliases
 alias run_java="$DEV/tools/terminal/run_java.sh"
