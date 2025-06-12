@@ -69,6 +69,7 @@ bindkey '^e' edit-command-line
 # == Aliases ==============================================================={{{
 DEV="$HOME/Files/2_Resources/Dev"
 ALXSE="$HOME/Files/0_Projects/Alx/programs/software_engineering"
+ALXBE="$HOME/Files/0_Projects/Alx/programs/backend_development"
 BOOTS="$HOME/Files/0_Projects/Boots"
 
 # System aliases
@@ -82,6 +83,10 @@ alias pacman='pacman --color auto'
 alias alxse="cd $ALXSE && pyenv activate alxse 2> /dev/null"
 alias alxse_projects="cd $ALXSE/projects && pyenv activate alxse 2> /dev/null"
 alias alxse_practice="cd $ALXSE/practice && pyenv activate alxse 2> /dev/null"
+
+alias alxbe="cd $ALXBE && pyenv activate alxbe 2> /dev/null"
+alias alxbe_projects="cd $ALXBE/projects && pyenv activate alxbe 2> /dev/null"
+alias alxbe_practice="cd $ALXBE/practice && pyenv activate alxbe 2> /dev/null"
 # alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
 
 # CLI aliases
@@ -191,8 +196,29 @@ fi
 # ssh-agent service environemnt variable
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
-# TODO:
-# Write an if command that checks if id_github is already added and 
-# if not, ssh-add id_github
+# Add ssh keys to ssh-agent
+# Array of SSH private key file paths
+ssh_keys=(
+  "$HOME/.ssh/id_github"
+  "$HOME/.ssh/id_alx"
+)
+
+# Get the list of currently loaded keys' fingerprints
+loaded_keys=$(ssh-add -l 2>/dev/null | awk '{print $2}')
+
+for key in "${ssh_keys[@]}"; do
+  if [[ -f "$key" ]]; then # Check if the key is present
+    key_fp=$(ssh-keygen -lf "$key" | awk '{print $2}') # Get the key's fingerprint using ssh-keygen
+
+    if echo "$loaded_keys" | grep -q "$key_fp"; then
+      # echo "Key $key already loaded. Skipping."
+    else
+      ssh-add "$key"
+      # echo "Added key: $key"
+    fi
+  else
+    echo "Key file $key not found. Skipping."
+  fi
+done
 
 # }}}
