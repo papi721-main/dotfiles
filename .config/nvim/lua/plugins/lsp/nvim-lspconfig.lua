@@ -125,7 +125,7 @@ return {
                 maxLineLength = 79,
               },
               pydocstyle = { -- linter for docstring style checking
-                enabled = true,
+                enabled = false,
                 convention = "google",
                 addIgnore = {
                   "D100", -- Missing docstring in public module
