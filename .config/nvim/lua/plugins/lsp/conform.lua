@@ -15,6 +15,7 @@ return {
         sh = { "shfmt" },
         python = { "isort", "black" },
         c = { "clang_format" },
+        sql = { "sql_formatter" },
       },
       -- The options you set here will be merged with the builtin formatters.
       -- You can also define any custom formatters here.
@@ -38,6 +39,12 @@ return {
         clang_format = {
           -- Below line is only left here for example
           -- prepend_args = { "--style=file:" .. vim.fn.expand("$HOME/.config/nvim/.clang-format") },
+        },
+        sql_formatter = {
+          -- More info from: https://github.com/sql-formatter-org/sql-formatter
+          prepend_args = {
+            vim.fn.expand("--config=$HOME/.config/nvim/.sql-format.json"),
+          },
         },
       },
     }

@@ -64,7 +64,21 @@ return {
       -- Bash
       bashls = {},
 
-      -- Lua
+      -- SQL
+      sqlls = {},
+
+      -- sqls = {
+      --   -- This is a SQL LSP server that comes packed with linters and formatters for the SQL language.
+      --   -- DSN (dataSourceName) is the Data Source Name, which is used to connect to the database
+      --   -- The format is: username:password@protocol(address)/dbname?param=value
+      --   connections = {
+      --     {
+      --       driver = "mysql",
+      --       dataSourceName = "root:@tcp(127.0.0.1:3306)/alx_book_store",
+      --     },
+      --   },
+      -- },
+
       lua_ls = {
         -- mason = false, -- set to false if you don't want this server to be installed with mason
         -- Use this to add any additional keymaps
