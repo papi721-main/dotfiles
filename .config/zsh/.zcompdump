@@ -243,6 +243,7 @@ _comps=(
 'ctags-universal' '_ctags'
 'ctr' '_ctr'
 'curl' '_curl'
+'cursor' '_cursor'
 'cut' '_cut'
 'cvs' '_cvs'
 'dad' '_dad'
@@ -712,7 +713,6 @@ _comps=(
 'journalctl' '_journalctl'
 'jq' '_jq'
 'jrnl' '_jrnl'
-'jupyter' '_jupyter'
 'kak' '_kak'
 'kdeconnect-cli' '_kdeconnect'
 'kernel-install' '_kernel-install'
@@ -1131,7 +1131,6 @@ _comps=(
 'pwait' '_pids'
 'pwdx' '_pids'
 'pwgen' '_pwgen'
-'pyenv' '_pyenv'
 'pygmentize' '_pygmentize'
 'pyhtmlizer' '_twisted'
 'qdbus' '_qdbus'
@@ -1183,6 +1182,7 @@ _comps=(
 'restart' '_initctl'
 'retawq' '_webbrowser'
 'rfkill' '_rfkill'
+'rg' '_rg'
 'rgrep' '_grep'
 'rgview' '_vim'
 'rgvim' '_vim'
@@ -1854,18 +1854,18 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _ccache _cf _checkupdates _choc _chromium \
             _clang-check _clang-format _clang-tidy _cmake _code \
             _coffee _conan _concourse _console _coredumpctl \
-            _cppcheck _ctr _curl _dad _dart \
-            _dget _dhcpcd _diana _direnv _dkms \
-            _docker _docpad _drush _ecdsautil _emacs \
-            _emacsclient _emulator _envdir _exportfs _fab \
-            _fail2ban-client _ffind _flatpak _fleetctl _flutter \
-            _fvm _fwupdmgr _gas _gh _ghc \
-            _gist _git-flow _git-pulls _git-revise _git-wtf \
-            _glances _golang _google _gpgconf _grpcurl \
-            _gtk-launch _hello _hledger _homestead _hostnamectl \
-            _httpie _ibus _include-what-you-use _insmod _inxi \
-            _jmeter _jmeter-plugins _jonas _journalctl _jrnl \
-            _jupyter _kak _kernel-install _kitchen _knife \
+            _cppcheck _ctr _curl _cursor _dad \
+            _dart _dget _dhcpcd _diana _direnv \
+            _dkms _docker _docpad _drush _ecdsautil \
+            _emacs _emacsclient _emulator _envdir _exportfs \
+            _fab _fail2ban-client _ffind _flatpak _fleetctl \
+            _flutter _fvm _fwupdmgr _gas _gh \
+            _ghc _gist _git-flow _git-pulls _git-revise \
+            _git-wtf _glances _golang _google _gpgconf \
+            _grpcurl _gtk-launch _hello _hledger _homestead \
+            _hostnamectl _httpie _ibus _include-what-you-use _insmod \
+            _inxi _jmeter _jmeter-plugins _jonas _journalctl \
+            _jrnl _kak _kernel-install _kitchen _knife \
             _language_codes _libinput _lilypond _localectl _loginctl \
             _lsmod _lunchy _machinectl _mc _meson \
             _middleman _mina _mix _mkcert _mkinitcpio \
@@ -1876,9 +1876,9 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _pacman _pacscripts _pacsearch _pacsort _pactree \
             _pamac _patchelf _patool _periscope _pgsql_utils \
             _phing _pixz _pkcon _play _pm2 \
-            _port _powerprofilesctl _protoc _pulseaudio _pyenv \
-            _pygmentize _qmk _qpdf _rails _ralio \
-            _rankmirrors _redis-cli _resolvectl _rfkill _rkt \
+            _port _powerprofilesctl _protoc _pulseaudio _pygmentize \
+            _qmk _qpdf _rails _ralio _rankmirrors \
+            _redis-cli _resolvectl _rfkill _rg _rkt \
             _rmlint _rmmod _rslsync _rspec _rsvm \
             _rubocop _run0 _sbctl _sbt _scala \
             _screencapture _scrub _sdd _sd_hosts_or_user_at_host _sdkmanager \

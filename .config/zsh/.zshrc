@@ -78,6 +78,8 @@ BOOTS="$HOME/Files/0_Projects/Boots"
 alias ls='lsd -l'
 alias grep='grep --color=auto'
 alias pacman='pacman --color auto'
+alias yay="yay --aur --color=always"
+alias initiate_conda='eval "$(/home/papi721/anaconda3/bin/conda shell.zsh hook)"'
 
 # Alx aliases
 alias alxse="cd $ALXSE && pyenv activate alxse 2> /dev/null"
@@ -154,12 +156,12 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 # Pyenv settings
-if [[ -e $(which pyenv) ]]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
+# if [[ -e $(which pyenv) ]]; then
+#     export PYENV_ROOT="$HOME/.pyenv"
+#     [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#     eval "$(pyenv init -)"
+#     eval "$(pyenv virtualenv-init -)"
+# fi
 
 # pip3 requires $HOME/.local/bin to be in PATH
 if [[ -e $(which pip3) ]]; then
@@ -236,5 +238,5 @@ done
 #     fi
 # fi
 # unset __conda_setup
-# <<< conda initialize <<<
+# # <<< conda initialize <<<
 
