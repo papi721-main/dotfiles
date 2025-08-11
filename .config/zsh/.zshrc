@@ -82,13 +82,13 @@ alias yay="yay --aur --color=always"
 alias initiate_conda='eval "$(/home/papi721/anaconda3/bin/conda shell.zsh hook)"'
 
 # Alx aliases
-alias alxse="cd $ALXSE && pyenv activate alxse 2> /dev/null"
-alias alxse_projects="cd $ALXSE/projects && pyenv activate alxse 2> /dev/null"
-alias alxse_practice="cd $ALXSE/practice && pyenv activate alxse 2> /dev/null"
+alias alxse="cd $ALXSE"
+alias alxse_projects="cd $ALXSE/projects"
+alias alxse_practice="cd $ALXSE/practice"
 
-alias alxbe="cd $ALXBE && pyenv activate alxbe 2> /dev/null"
-alias alxbe_projects="cd $ALXBE/projects && pyenv activate alxbe 2> /dev/null"
-alias alxbe_practice="cd $ALXBE/practice && pyenv activate alxbe 2> /dev/null"
+alias alxbe="cd $ALXBE"
+alias alxbe_projects="cd $ALXBE/projects"
+alias alxbe_practice="cd $ALXBE/practice"
 # alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
 
 # CLI aliases
@@ -104,7 +104,7 @@ alias mysql='mariadb'
 # Developer aliases
 alias dev="cd $DEV/"
 alias dev_sandbox='ssh papi721@192.168.122.69'
-alias boots="cd $BOOTS && pyenv activate boots 2> /dev/null"
+alias boots="cd $BOOTS"
 
 # Java aliases
 alias run_java="$DEV/tools/terminal/run_java.sh"
