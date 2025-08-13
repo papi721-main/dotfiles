@@ -13,8 +13,8 @@ local opt = vim.opt
 -- opt.smartindent = true -- automatic indenting
 
 -- [[ Formatting ]]
-opt.textwidth = 79
-opt.colorcolumn = "+1"
+-- opt.textwidth = 79
+-- opt.colorcolumn = "+1"
 
 -- [[ Folding ]]
 -- Comment this lines to use LazyVim's default fold options
