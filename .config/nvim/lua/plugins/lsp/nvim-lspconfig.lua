@@ -136,7 +136,7 @@ return {
               },
               pycodestyle = { -- linter for style checking
                 enabled = true,
-                maxLineLength = 79,
+                maxLineLength = 160,
               },
               pydocstyle = { -- linter for docstring style checking
                 enabled = false,
