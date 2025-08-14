@@ -119,7 +119,7 @@ return {
                 -- reportUnboundVariable = "none",
                 -- reportGeneralTypeIssues = "none",
               },
-              typeCheckingMode = "basic", -- off, basic, strict
+              typeCheckingMode = "off", -- off, basic, strict
             },
           },
         },
