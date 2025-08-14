@@ -1,0 +1,4 @@
+channels:
+  - defaults
+default_python:
+auto_activate: false
