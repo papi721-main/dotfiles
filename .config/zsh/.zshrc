@@ -206,6 +206,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 ssh_keys=(
   "$HOME/.ssh/id_github"
   "$HOME/.ssh/id_alx"
+  "$HOME/.ssh/id_github_dev"
 )
 
 # Get the list of currently loaded keys' fingerprints
