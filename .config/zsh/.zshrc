@@ -70,6 +70,7 @@ bindkey '^e' edit-command-line
 DEV="$HOME/Files/2_Resources/Dev"
 ALXSE="$HOME/Files/0_Projects/Alx/programs/software_engineering"
 ALXBE="$HOME/Files/0_Projects/Alx/programs/backend_development"
+ALXDS="$HOME/Files/0_Projects/Alx/programs/data_science"
 BOOTS="$HOME/Files/0_Projects/Boots"
 
 # System aliases
@@ -86,10 +87,12 @@ alias alxse="cd $ALXSE"
 alias alxse_projects="cd $ALXSE/projects"
 alias alxse_practice="cd $ALXSE/practice"
 
-alias alxbe="cd $ALXBE"
-alias alxbe_projects="cd $ALXBE/projects"
-alias alxbe_practice="cd $ALXBE/practice"
+alias alxbe="cd $ALXBE && conda activate alxbe 2> /dev/null"
+alias alxbe_projects="cd $ALXBE/projects && conda activate alxbe 2> /dev/null"
+alias alxbe_practice="cd $ALXBE/practice && conda activate alxbe 2> /dev/null"
 # alias alx_kitten_sandbox='kitten ssh alxsandbox@192.168.122.121'
+
+alias alxds="cd $ALXDS"
 
 # CLI aliases
 alias gcc_alx='gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -g'
