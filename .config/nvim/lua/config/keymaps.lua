@@ -7,4 +7,6 @@ local map = LazyVim.safe_keymap_set
 map("n", "<leader>um", ":RenderMarkdown toggle<cr>", { desc = "Render Markdown Toggle" })
 map("n", "<leader>ad", ":Copilot disable<cr>", { desc = "Disable Copilot" })
 map("n", "<leader>ae", ":Copilot enable<cr>", { desc = "Enable Copilot" })
+map("n", "<leader>ac", ":Copilot attach<cr>", { desc = "Attach Copilot" })
+map("n", "<leader>az", ":Copilot detach<cr>", { desc = "Detach Copilot" })
 map("n", "<leader>at", ":Codeium Toggle<cr>", { desc = "Codeium Toggle" })
