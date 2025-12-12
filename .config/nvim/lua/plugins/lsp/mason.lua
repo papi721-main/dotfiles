@@ -14,7 +14,7 @@ return {
       "isort", -- Python (for formatting imports)
       "clang-format", -- C and C++
       "sql-formatter", -- SQL
-      -- "prettier", -- HTML, CSS, and JS
+      "prettier", -- HTML, CSS, and JS
       -- "mdformat", -- Markdown
     },
   },
